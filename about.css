@@ -1,0 +1,273 @@
+body {
+    font-family: Arial Impact, 'Arial Narrow Bold', sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo img {
+    height: 100px; /* Adjust the height as needed */
+    width: auto;  /* Maintain aspect ratio */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.get-in-touch {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-align: center; /* Ensure text inside the button is centered */
+}
+
+.get-in-touch:hover {
+    background: white;
+    color: black;
+}
+
+/* Remove underline from the link inside the button */
+.get-in-touch a {
+    color: inherit; /* Inherit the color from the button */
+    text-decoration: none;
+}
+
+.get-in-touch a:hover {
+    color: inherit; /* Ensure the link color changes with the button */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+#about-us {
+    padding: 50px 20px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-text p, .about-text ul {
+    font-size: 16px;
+}
+
+.about-text ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#readytogrow {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    margin-bottom: 0; /* Ensure there's no margin at the bottom */
+}
+
+.readytogrow-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.readytogrow-text {
+    flex: 1; /* Take up remaining space */
+    padding: 0 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    background: #d80000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background: #a60000;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    margin-top: 0; /* Ensure there's no margin at the top */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content img {
+    margin-right: 20px;
+    width: 150px; /* Adjust as needed */
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.footer-links a:last-child {
+    margin-right: 0;
+}
+
+/* Media Queries for responsiveness */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-image {
+        flex: 1 1 100%; /* Full width */
+        padding: 20px 0; /* Adjust padding */
+    }
+
+    .readytogrow-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    .readytogrow-content {
+        flex-direction: column;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .readytogrow-content {
+        flex-direction: row;
+    }
+}
