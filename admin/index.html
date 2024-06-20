@@ -1,0 +1,51 @@
+<!-- concern-media/admin/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - ConcernMedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../public/index.html">
+                    <img src="../images/concermedia-logo2.png" alt="ConcernMedia Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+            <button class="logout-button"><a href="../public/index.html">Logout</a></button>
+        </nav>
+    </header>
+    <main>
+        <h1>Admin Dashboard</h1>
+        <section id="change-picture">
+            <h2>Change Website Pictures</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <label for="image">Select Image to Upload:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+                <label for="target">Select Target:</label>
+                <select id="target" name="target" required>
+                    <option value="concermedia-logo2.png">Logo</option>
+                    <option value="services.png">Services Image</option>
+                    <option value="our-clients.png">Clients Image</option>
+                </select>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Messages from Visitors</h2>
+            <ul id="messages-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ConcernMedia. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
