@@ -100,13 +100,54 @@ form input, form select, form button {
     max-width: 300px;
 }
 
-footer {
+/* footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px 0;
     bottom: 0;
     width: 100%;
+} */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0; /* Ensure there's no margin at the bottom */
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content img {
+    margin-right: 20px;
+    width: 150px;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.footer-links a:last-child {
+    margin-right: 0;
 }
 
 /* Media Queries for Responsiveness */
